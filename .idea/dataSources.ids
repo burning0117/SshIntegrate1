@@ -1,53 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source name="MySQL - bookstore@localhost" uuid="9cf3d6f6-4d83-4053-9b8f-62d4d70f6d85">
+  <data-source name="MySQL - oa0909@localhost" uuid="d8da5eb9-ed5c-4391-b7c0-aa3060da66e0">
     <database-info product="MySQL" version="5.6.26-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
       <extra-name-characters>#@</extra-name-characters>
       <identifier-quote-string>`</identifier-quote-string>
     </database-info>
     <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
-    <schema name="" catalog="bookstore"/>
-    <table name="books" schema="" catalog="bookstore" type="TABLE">
-      <column name="id" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12"/>
-      <column name="NAME" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
-      <column name="price" sqlType="DECIMAL" precision="10" scale="2" nullable="true" jdbcType="3"/>
-      <column name="auth" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12"/>
-      <column name="img" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
-      <column name="rebate" sqlType="DECIMAL" precision="3" scale="2" nullable="true" jdbcType="3"/>
-      <column name="stock" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="publisher" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
-      <column name="publishdate" sqlType="VARCHAR" precision="19" scale="0" nullable="true" jdbcType="12"/>
-      <column name="pages" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="size" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="printtimes" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="versions" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="brief" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
-      <column name="content" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
-      <column name="onlinetime" sqlType="VARCHAR" precision="19" scale="0" nullable="true" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="btfk1" table="booktype" schema="" catalog="bookstore" columns="bookid"/>
-    </table>
-    <table name="booktype" schema="" catalog="bookstore" type="TABLE">
-      <column name="bookid" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12"/>
-      <column name="typeid" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="bookid,typeid"/>
-      <foreign-key name="btfk1" columns="bookid" ref-table="books" ref-schema="" ref-catalog="bookstore" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="btfk2" columns="typeid" ref-table="types" ref-schema="" ref-catalog="bookstore" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <index name="btfk2" unique="false" columns="typeid"/>
-    </table>
-    <table name="types" schema="" catalog="bookstore" type="TABLE">
-      <column name="id" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12"/>
-      <column name="NAME" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
-      <column name="des" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="btfk2" table="booktype" schema="" catalog="bookstore" columns="typeid"/>
-    </table>
-    <table name="users" schema="" catalog="bookstore" type="TABLE">
-      <column name="id" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12"/>
-      <column name="name" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12"/>
-      <column name="pwd" sqlType="VARCHAR" precision="32" scale="0" nullable="true" jdbcType="12"/>
-      <column name="mail" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="id"/>
+    <schema name="" catalog="oa0909"/>
+    <table name="person" schema="" catalog="oa0909" type="TABLE">
+      <column name="pid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="pname" sqlType="VARCHAR" precision="32" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="pid"/>
     </table>
   </data-source>
 </component>

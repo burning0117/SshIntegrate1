@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="hibernate">
+    <CLASSES>
+      <root url="jar://D:/专业课/java/JavaEE+物联云计算就业班视频_2/day1127-spring练习（指导老师赵栋)/day1127-spring练习（指导老师赵栋)/s2sh0909/WebRoot/WEB-INF/lib/hibernate3.5.6/javassist-3.9.0.GA.jar!/" />
+      <root url="jar://D:/专业课/java/JavaEE+物联云计算就业班视频_2/day1127-spring练习（指导老师赵栋)/day1127-spring练习（指导老师赵栋)/s2sh0909/WebRoot/WEB-INF/lib/hibernate3.5.6/dom4j-1.6.1.jar!/" />
+      <root url="jar://D:/专业课/java/JavaEE+物联云计算就业班视频_2/day1127-spring练习（指导老师赵栋)/day1127-spring练习（指导老师赵栋)/s2sh0909/WebRoot/WEB-INF/lib/hibernate3.5.6/hibernate-commons-annotations.jar!/" />
+      <root url="jar://D:/专业课/java/JavaEE+物联云计算就业班视频_2/day1127-spring练习（指导老师赵栋)/day1127-spring练习（指导老师赵栋)/s2sh0909/WebRoot/WEB-INF/lib/hibernate3.5.6/commons-collections-3.1.jar!/" />
+      <root url="jar://D:/专业课/java/JavaEE+物联云计算就业班视频_2/day1127-spring练习（指导老师赵栋)/day1127-spring练习（指导老师赵栋)/s2sh0909/WebRoot/WEB-INF/lib/hibernate3.5.6/slf4j-log4j12.jar!/" />
+      <root url="jar://D:/专业课/java/JavaEE+物联云计算就业班视频_2/day1127-spring练习（指导老师赵栋)/day1127-spring练习（指导老师赵栋)/s2sh0909/WebRoot/WEB-INF/lib/hibernate3.5.6/jta-1.1.jar!/" />
+      <root url="jar://D:/专业课/java/JavaEE+物联云计算就业班视频_2/day1127-spring练习（指导老师赵栋)/day1127-spring练习（指导老师赵栋)/s2sh0909/WebRoot/WEB-INF/lib/hibernate3.5.6/hibernate-annotations.jar!/" />
+      <root url="jar://D:/专业课/java/JavaEE+物联云计算就业班视频_2/day1127-spring练习（指导老师赵栋)/day1127-spring练习（指导老师赵栋)/s2sh0909/WebRoot/WEB-INF/lib/hibernate3.5.6/hibernate3.jar!/" />
+      <root url="jar://D:/专业课/java/JavaEE+物联云计算就业班视频_2/day1127-spring练习（指导老师赵栋)/day1127-spring练习（指导老师赵栋)/s2sh0909/WebRoot/WEB-INF/lib/hibernate3.5.6/antlr-2.7.6.jar!/" />
+      <root url="jar://D:/专业课/java/JavaEE+物联云计算就业班视频_2/day1127-spring练习（指导老师赵栋)/day1127-spring练习（指导老师赵栋)/s2sh0909/WebRoot/WEB-INF/lib/hibernate3.5.6/slf4j-api-1.5.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

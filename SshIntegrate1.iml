@@ -9,9 +9,32 @@
         <webroots>
           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
         </webroots>
-        <sourceRoots>
-          <root url="file://$MODULE_DIR$/src/main/resources" />
-        </sourceRoots>
+      </configuration>
+      <facet type="Struts2" name="Struts 2">
+        <configuration>
+          <fileset id="s2fileset" name="My Fileset " removed="false">
+            <file>file://$MODULE_DIR$/src/main/resources/struts.xml</file>
+            <file>jar://D:/专业课/java/JavaEE+物联云计算就业班视频_2/day1127-spring练习（指导老师赵栋)/day1127-spring练习（指导老师赵栋)/s2sh0909/WebRoot/WEB-INF/lib/struts2/struts2-spring-plugin-2.1.8.1.jar!/struts-plugin.xml</file>
+            <file>jar://D:/专业课/java/JavaEE+物联云计算就业班视频_2/day1127-spring练习（指导老师赵栋)/day1127-spring练习（指导老师赵栋)/s2sh0909/WebRoot/WEB-INF/lib/struts2/struts2-core-2.1.8.1.jar!/struts-default.xml</file>
+          </fileset>
+          <propertiesKeys disabled="false" />
+        </configuration>
+      </facet>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/applicationContext.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="hibernate.cfg.xml" value="d8da5eb9-ed5c-4391-b7c0-aa3060da66e0" />
+        </datasource-map>
+        <naming-strategy-map />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/hibernate.cfg.xml" />
       </configuration>
     </facet>
   </component>
@@ -25,6 +48,12 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
+    <orderEntry type="library" name="struts2" level="project" />
+    <orderEntry type="library" name="spring2.5.5" level="project" />
+    <orderEntry type="library" name="junit" level="project" />
+    <orderEntry type="library" name="hibernate" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.0.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet.jsp:jsp-api:2.2" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.35" level="project" />
   </component>
 </module>
