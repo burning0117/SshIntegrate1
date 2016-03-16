@@ -11,12 +11,12 @@
            	http://www.springframework.org/schema/tx 
            	http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
 
-	<bean id="personDao" class="dao.PersonDaoImpl">
+	<bean id="personDao" class="dao.PersonDaoImpl" scope="singleton">
 		<property name="sessionFactory">
 			<ref bean="sessionFactory"/>
 		</property>
 	</bean>
-	<bean id="personService" class="service.PersonServiceImpl">
+	<bean id="personService" class="service.PersonServiceImpl" scope="singleton">
 		<property name="personDao">
 			<ref bean="personDao"/>
 		</property>
@@ -42,7 +42,7 @@
 		</tx:attributes>
 	</tx:advice>
 	<aop:config>
-		<aop:pointcut id="perform" expression="execution(* service.*.*(..))"/>
+		<aop:pointcut id="perform" expression="execution(* service.PersonServiceImpl.*(..))"/>
 		<aop:advisor advice-ref="tx" pointcut-ref="perform"/>
 	</aop:config>
  </beans>

@@ -4,12 +4,14 @@ import com.opensymphony.xwork2.ActionSupport;
 import domain.Person;
 import service.PersonService;
 
+import java.util.Calendar;
+import java.util.Timer;
+
 /**
  * Created by burning on 2016/3/16.
  */
 public class PersonAction extends ActionSupport {
     private PersonService personService;
-
     public PersonService getPersonService() {
         return personService;
     }
@@ -18,12 +20,12 @@ public class PersonAction extends ActionSupport {
         this.personService = personService;
     }
 
-    public String savePerson(){
-        System.out.println("222222");
+    public String savePerson() throws InterruptedException {
+        System.out.println(Calendar.SECOND);
         Person person=new Person();
         person.setPname("0909美女");
-        System.out.println("111111");
         personService.savePerson(person);
+        System.out.println("3");
         return null;
     }
 }

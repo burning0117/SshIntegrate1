@@ -19,5 +19,6 @@ public class PersonServiceImpl implements PersonService{
 
     public void savePerson(Person person) {
        this.personDao.savePerson(person);
+        System.out.println("2");
     }
 }
