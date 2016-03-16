@@ -11,9 +11,6 @@ public class PersonTest extends BaseSpring {
     @Test
     public void testSavePerson() {
         PersonService personService = (PersonService) context.getBean("personService");
-        Person person=new Person();
-        person.setPname("0909美女");
-        personService.savePerson(person);
-        System.out.printf(personService+"");
+
     }
 }

@@ -10,11 +10,7 @@
            	http://www.springframework.org/schema/context/spring-context-2.5.xsd
            	http://www.springframework.org/schema/tx 
            	http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
-	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
-		<property name="configLocation">
-			<value>classpath:hibernate.cfg.xml</value>
-		</property>
-	</bean>
+
 	<bean id="personDao" class="dao.PersonDaoImpl">
 		<property name="sessionFactory">
 			<ref bean="sessionFactory"/>
@@ -23,6 +19,16 @@
 	<bean id="personService" class="service.PersonServiceImpl">
 		<property name="personDao">
 			<ref bean="personDao"/>
+		</property>
+	</bean>
+	<bean id="personAction" class="action.PersonAction" scope="prototype">
+		<property name="personService">
+			<ref bean="personService"/>
+		</property>
+	</bean>
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="configLocation">
+			<value>classpath:hibernate.cfg.xml</value>
 		</property>
 	</bean>
 	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
